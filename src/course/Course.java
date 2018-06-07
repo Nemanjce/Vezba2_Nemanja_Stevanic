@@ -10,5 +10,8 @@ package course;
  * @author qa-popodne
  */
 public class Course {
-    
+
+    private String name;
+    private int numberOfClasses;
+
 }
