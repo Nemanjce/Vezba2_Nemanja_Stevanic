@@ -30,7 +30,4 @@ public class Computer {
         this.hardDrive = hardDrive;
     }
 
-    
-    
-    
 }
