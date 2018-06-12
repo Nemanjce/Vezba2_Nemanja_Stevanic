@@ -28,6 +28,11 @@ public class Student {
 
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone(); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Student(String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
         this.firstName = firstName;
         this.lastName = lastName;
