@@ -11,6 +11,31 @@ public class Student {
     private Course course;
     private Computer computer;
 
+    public Student() {
+        this.firstName = "not defined";
+        this.lastName = "not defined";
+        this.yearOfBirth = 0;
+        this.course = new Course();
+        this.computer = new Computer();
+    }
+
+    public Student(String firstName, String lastName, int yearOfBirth) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.yearOfBirth = yearOfBirth;
+        this.course = new Course();
+        this.computer = new Computer();
+
+    }
+
+    public Student(String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.yearOfBirth = yearOfBirth;
+        this.course = course;
+        this.computer = computer;
+    }
+
     public Course getCourse() {
         return course;
     }
@@ -57,17 +82,6 @@ public class Student {
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
 
-    }
-
-    public Student() {
-    }
-
-    public Student(String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.yearOfBirth = yearOfBirth;
-        this.course = course;
-        this.computer = computer;
     }
 
 }
